@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
+import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,10 +10,11 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
-  vite: {
-    // Configure Vite to handle Elm files if needed
-    optimizeDeps: {
-      exclude: ["elm"],
-    },
-  },
+  integrations: [
+    react(),
+    tailwind({
+      // Disable the default base styles
+      applyBaseStyles: false,
+    }),
+  ],
 });
