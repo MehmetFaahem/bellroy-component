@@ -1,0 +1,29 @@
+---
+// ProductCard.astro
+---
+
+<div id="product-card-container"></div>
+
+<!-- Load the compiled Elm application -->
+<script is:inline src="/elm/ProductCard.js" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    try {
+      // Initialize the Elm application
+      const app = Elm.ProductCard.Main.init({
+        node: document.getElementById('product-card-container')
+      });
+      
+      // You can set up ports here for communicating between JS and Elm
+    } catch (error) {
+      console.error('Failed to load Elm application:', error);
+      document.getElementById('product-card-container').innerHTML = 
+        '<div class="product-card__error">Failed to load product component</div>';
+    }
+  });
+</script>
+
+<style is:global>
+  @import '../styles/product-card.css';
+</style> 

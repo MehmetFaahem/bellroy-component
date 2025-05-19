@@ -3,12 +3,17 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "npm run elm:compile && astro dev",
+    "build": "npm run elm:compile && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "elm:compile": "elm make src/ProductCard/Main.elm --output=public/elm/ProductCard.js"
   },
   "dependencies": {
-    "astro": "^5.7.13"
+    "@astrojs/node": "^9.2.1",
+    "astro": "^5.7.13",
+    "axios": "^1.9.0",
+    "elm": "^0.19.1-6",
+    "elm-format": "^0.8.7"
   }
 }

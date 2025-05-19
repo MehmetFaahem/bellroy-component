@@ -1,0 +1,58 @@
+{
+  "id": "bellroy-note-sleeve",
+  "name": "Note Sleeve Wallet",
+  "price": 129.0,
+  "imageSrc": "https://cdn.pixabay.com/photo/2016/11/23/18/12/bag-1854148_1280.jpg",
+  "colors": [
+    {
+      "name": "Black",
+      "value": "#000000"
+    },
+    {
+      "name": "Caramel",
+      "value": "#C68642"
+    },
+    {
+      "name": "Navy",
+      "value": "#1B365D"
+    },
+    {
+      "name": "Cocoa",
+      "value": "#5A3A22"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "bellroy-package",
+      "name": "Travel Package",
+      "price": 199.0,
+      "imageSrc": "https://cdn.pixabay.com/photo/2015/11/20/03/53/package-1052370_640.jpg",
+      "colors": [
+        {
+          "name": "Black",
+          "value": "#000000"
+        },
+        {
+          "name": "Brown",
+          "value": "#8B4513"
+        }
+      ]
+    },
+    {
+      "id": "bellroy-camera-bag",
+      "name": "Camera Sling Bag",
+      "price": 149.0,
+      "imageSrc": "https://cdn.pixabay.com/photo/2015/03/12/04/41/camera-bag-669616_640.jpg",
+      "colors": [
+        {
+          "name": "Black",
+          "value": "#000000"
+        },
+        {
+          "name": "Gray",
+          "value": "#808080"
+        }
+      ]
+    }
+  ]
+}
